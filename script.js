@@ -13,10 +13,10 @@ historys.forEach((history, index) => {
   history.addEventListener("click", () => {
     // hightlightImg.src = historyImg[index].src;
     // hightlight.style.display = "flex";
-
+    page3.classList.add("up");
     currentIndex = index;
     updateImage(currentIndex);
-    page3.style.height = "800px";
+    // page3.style.height = "800px";
   });
 });
 
@@ -47,5 +47,6 @@ function updateImage(currentIndex) {
 
 deleteBtn.addEventListener("click", () => {
   hightlight.style.display = "none";
-  page3.style.height = "440px";
+
+  page3.classList.remove("up");
 });

@@ -117,6 +117,14 @@ body {
   height: 440px;
 }
 
+.up {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 800px;
+}
+
 .page3 h2 {
   padding: 20px;
 
