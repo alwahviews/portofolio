@@ -102,11 +102,19 @@ body {
   margin-left: 20px;
   margin-bottom: 10px;
 }
+
+.picture {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .picture img {
-  height: 80%;
+  height: 90%;
   width: 80%;
   object-fit: cover;
-  margin: 30px;
+
   border-radius: 50px;
 }
 
@@ -118,10 +126,6 @@ body {
 }
 
 .up {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   height: 800px;
 }
 
@@ -205,4 +209,61 @@ body {
 .delete {
   right: 8px;
   top: 8px;
+}
+
+@media (max-width: 480px) {
+  .page1,
+  .page2,
+  .page3 {
+    height: 380px;
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+
+  .topline span {
+    letter-spacing: 4px;
+    font-size: 40px;
+  }
+
+  .bottomline {
+    height: 20%;
+  }
+
+  .picHistory {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  .about1 {
+    padding: 10px;
+  }
+  .about1 h1 {
+    margin-bottom: 10px;
+  }
+
+  .aboutme {
+    width: 60%;
+  }
+
+  .picture {
+    width: 40%;
+  }
+  .picture img {
+    width: 95%;
+    height: 80%;
+  }
+
+  .page3 {
+    height: 600px;
+  }
+
+  .history {
+    width: 180px;
+  }
+
+  .up {
+    height: 950px;
+  }
 }
