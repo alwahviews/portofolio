@@ -4,6 +4,7 @@ const hightlightImg = document.querySelector(".hightlight img");
 const historyImg = document.querySelectorAll(".history img");
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
+const deleteBtn = document.querySelector(".delete");
 
 let currentIndex = 0;
 
@@ -11,6 +12,7 @@ historys.forEach((history, index) => {
   history.addEventListener("click", () => {
     // hightlightImg.src = historyImg[index].src;
     // hightlight.style.display = "flex";
+
     currentIndex = index;
     updateImage(currentIndex);
   });
@@ -40,3 +42,7 @@ function updateImage(currentIndex) {
     console.log(currentIndex);
   }, 200);
 }
+
+deleteBtn.addEventListener("click", () => {
+  hightlight.style.display = "none";
+});
