@@ -5,6 +5,7 @@ const historyImg = document.querySelectorAll(".history img");
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 const deleteBtn = document.querySelector(".delete");
+const page3 = document.querySelector(".page3");
 
 let currentIndex = 0;
 
@@ -15,6 +16,7 @@ historys.forEach((history, index) => {
 
     currentIndex = index;
     updateImage(currentIndex);
+    page3.style.height = "800px";
   });
 });
 
@@ -45,4 +47,5 @@ function updateImage(currentIndex) {
 
 deleteBtn.addEventListener("click", () => {
   hightlight.style.display = "none";
+  page3.style.height = "440px";
 });
