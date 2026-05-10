@@ -123,8 +123,15 @@ body {
   flex-direction: column;
   align-items: center;
   height: 440px;
+  position: relative;
 }
 
+.page3 p {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  color: #747373;
+}
 .up {
   height: 800px;
 }
@@ -263,6 +270,9 @@ body {
     width: 180px;
   }
 
+  .page3 p {
+    top: 9%;
+  }
   .up {
     height: 950px;
   }
